@@ -1,5 +1,5 @@
 # Yield Aggregator
-A yield aggregator that compares the APY between COMPOUND and AAVE protocol. Funds are deposited to the one with better interest rates.
+A WIP yield aggregator that compares the APY between COMPOUND and AAVE protocol. Funds are deposited to the one with better interest rates.
 
 Currently being developed on a forked ETH blockchain using ganache-cli.
 
