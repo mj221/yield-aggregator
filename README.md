@@ -7,7 +7,10 @@ In ganache-cli terminal, run:
 ```
 ganache-cli -f https://mainnet.infura.io/v3/<infura project id> -u 0x9759A6Ac90977b93B58547b4A71c78317f391A28 -p 7545
 ```
-Includes a script to mint DAI stablecoins.
+Includes a script to mint DAI stablecoins. Run:
+```
+node mint-dai/dai.js 
+```
 
 
 PREVIEW:
