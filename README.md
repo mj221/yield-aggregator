@@ -15,4 +15,6 @@ node mint-dai/dai.js
 
 PREVIEW:
 
-![Screen Shot 2022-02-18 at 9 07 42 pm](https://user-images.githubusercontent.com/50122869/154671422-c1243c95-9b6b-4a6d-be8b-4c1ca422579d.png)
+<!-- ![Screen Shot 2022-02-18 at 9 07 42 pm](https://user-images.githubusercontent.com/50122869/154671422-c1243c95-9b6b-4a6d-be8b-4c1ca422579d.png) -->
+
+![Screen Shot 2022-03-12 at 12 39 27 am](https://user-images.githubusercontent.com/50122869/157888963-2506bda4-a7f0-4867-9e78-b67fae63e9dd.png)
