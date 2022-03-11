@@ -14,6 +14,7 @@ import { getCompoundAPY, getAaveAPY } from '../helpers/calculateAPY'
 // Import components
 import NavBar from './Navbar'
 
+
 class App extends Component {
 
 	constructor() {
@@ -42,23 +43,23 @@ class App extends Component {
 
 	}
 
-	async componentWillMount() {
-		// const provider = await detectEthereumProvider()
-	 //    if(provider){
-	 //      window.ethereum.sendAsync({
-	 //        method: "eth_accounts",
-	 //        params: [],
-	 //        jsonrpc: "2.0",
-	 //        id: new Date().getTime()
-	 //        } , async (error, result) =>{
-	 //            console.log(result);
-	 //            if (result["result"]!=="") {
-	 //              await this.loadWeb3();
-	 //              await this.loadBlockchainData();//addresses found. result["result"] contains wallet address
-	 //            }else {console.log("MetaMask account may not be connected");}//found not address, which mean this wallet is not logged in
-	 //        });
-	 //    }
-	}
+	async componentDidMount(){
+    // Connect automatically if MetaMask exists (and connected) and an account is already logged in 
+	    // const provider = await detectEthereumProvider()
+	    // if(provider){
+	    //   window.ethereum.sendAsync({
+	    //     method: "eth_accounts",
+	    //     params: [],
+	    //     jsonrpc: "2.0",
+	    //     id: new Date().getTime()
+	    //     } , async (error, result) =>{
+	    //         if (result["result"]!=="") {
+	    //           await this.loadWeb3();
+	    //           await this.loadBlockchainData();//addresses found. result["result"] contains wallet address
+	    //         }else {console.log("MetaMask account may not be connected");}//found not address, which mean this wallet is not logged in
+	    //     });
+	    // }
+  }
 
 	async loadWeb3() {
 		if (window.ethereum) {
@@ -227,9 +228,18 @@ class App extends Component {
 						{this.state.loading
 							? <div style={{height: '100vh'}} id="loader" className="text-center d-flex align-items-center justify-content-center">Loading...</div>
 							:<div>
-								<div className="row">
-									<div className="col">
-										<h1 className="my-5">Yield Aggregator</h1>
+								<div className="row mt-4 pb-0">
+									<div className="col mt-4">
+										<div className="d-flex justify-content-center mt-4">
+											<div className="alert alert-info" role="alert">
+											  <p><b>&#9432;</b> INFORMATION <b>&#9432;</b></p>
+											  <p>YG is a DeFi yield aggregator which compares the APY between COMPOUND and AAVE protocol.</p>
+											  <p>Funds are deposited to the one with better interest rates.</p>
+											  <p>Currently runs on a forked Ethereum mainnet on Ganache-cli (Not for commercial use yet).</p>
+											</div>
+										
+											
+										</div>
 									
 									</div>
 								</div>
